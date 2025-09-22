@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListAI - Vai comprar lista ai?</title>
+    <meta name="description" content="ListAI é um aplicativo revolucionário de lista de compras com IA, scanner de código de barras e gestão inteligente de gastos. Vai comprar lista ai? Em fase de teste beta.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logosbg.png" alt="ListAI Logo" class="logo-icon">
+                <span class="logo-text">ListAI</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Funcionalidades</a>
+                <a href="#beta">Beta Test</a>
+                <a href="#contact">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-logo-section">
+                    <img src="logo.png" alt="ListAI Logo" class="hero-logo">
+                </div>
+                <div class="beta-badge">
+                    <i class="fas fa-flask"></i>
+                    <span>Versão Beta</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">Vai comprar lista ai?</span>
+                </h1>
+                <p class="hero-description">
+                    ListAI revoluciona suas compras com IA, scanner de código de barras e gestão automática de gastos. 
+                    Seja um dos primeiros a testar esta tecnologia inovadora.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">+95%</div>
+                        <div class="stat-label">Precisão IA</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">-60%</div>
+                        <div class="stat-label">Tempo Compra</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">R$ 240</div>
+                        <div class="stat-label">Economia/Mês</div>
+                    </div>
+                </div>
+                <button class="cta-button" onclick="scrollToBeta()">
+                    <i class="fas fa-rocket"></i>
+                    Participar do Beta
+                </button>
+            </div>
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <img src="print.png" alt="ListAI App Screenshot" class="app-screenshot">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-logo">
+                    <img src="logo.png" alt="ListAI Logo" class="section-logo-img">
+                </div>
+                <h2>Funcionalidades Revolucionárias</h2>
+                <p>Descubra como a IA transforma sua experiência de compras</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <rect x="3" y="3" width="7" height="7"/>
+                            <rect x="14" y="3" width="7" height="7"/>
+                            <rect x="14" y="14" width="7" height="7"/>
+                            <rect x="3" y="14" width="7" height="7"/>
+                            <path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M17 10h4M3 14h4M17 14h4"/>
+                        </svg>
+                    </div>
+                    <h3>Scanner Inteligente</h3>
+                    <p>Escaneie códigos de barras e a IA reconhece automaticamente produtos, preços e marcas com precisão impressionante.</p>
+                    <div class="feature-stats">
+                        <span class="stat">+95% Precisão</span>
+                        <span class="stat">0.3s Velocidade</span>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <h3>IA Generativa</h3>
+                    <p>Nossa IA sugere produtos similares, calcula preços estimados e otimiza sua lista baseada em seus hábitos de compra.</p>
+                    <div class="feature-stats">
+                        <span class="stat">Sugestões Inteligentes</span>
+                        <span class="stat">Previsão de Preços</span>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <h3>Relatórios Avançados</h3>
+                    <p>Analise seus gastos com gráficos interativos, tendências mensais e insights personalizados para economizar mais.</p>
+                    <div class="feature-stats">
+                        <span class="stat">Gráficos Interativos</span>
+                        <span class="stat">Insights IA</span>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Compartilhamento Inteligente</h3>
+                    <p>Compartilhe listas como imagens formatadas ou texto, perfeito para familiares e amigos.</p>
+                    <div class="feature-stats">
+                        <span class="stat">Imagens Formatadas</span>
+                        <span class="stat">Integração Social</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beta Signup Section -->
+    <section id="beta" class="beta-section">
+        <div class="container">
+            <div class="beta-content">
+                <div class="beta-info">
+                    <div class="beta-badge-large">
+                        <i class="fas fa-flask"></i>
+                        <span>Teste Beta Interno</span>
+                    </div>
+                    <h2>Seja um dos Primeiros</h2>
+                    <p class="beta-description">
+                        Estamos selecionando um grupo limitado de testadores beta para ajudar a refinar o ListAI 
+                        antes do lançamento público. Como beta tester, você terá:
+                    </p>
+                    <ul class="beta-benefits">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Acesso antecipado gratuito</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Influência direta no desenvolvimento</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Suporte prioritário da equipe</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Versão premium gratuita por 1 ano</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="beta-signup">
+                    <div class="signup-card">
+                        <h3>Inscreva-se para o Beta</h3>
+                        <p>Digite seu email para receber o convite quando estivermos prontos</p>
+                        
+                        <form id="betaForm" class="beta-form">
+                            <div class="input-group">
+                                <div class="input-wrapper">
+                                    <i class="fas fa-envelope"></i>
+                                    <input 
+                                        type="email" 
+                                        id="email" 
+                                        name="email" 
+                                        placeholder="seu@email.com" 
+                                        required
+                                    >
+                                </div>
+                                <button type="submit" class="submit-btn">
+                                    <span class="btn-text">Participar</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </form>
+                        
+                        <div class="signup-stats">
+                            <div class="stat-item">
+                                <span class="stat-number" id="signupCount">0</span>
+                                <span class="stat-label">Testadores Inscritos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">50</span>
+                                <span class="stat-label">Vagas Disponíveis</span>
+                            </div>
+                        </div>
+                        
+                        <div class="privacy-note">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Seus dados estão seguros. Não compartilhamos informações com terceiros.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Entre em Contato</h2>
+                <p>Dúvidas sobre o ListAI? Estamos aqui para ajudar!</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Email</h4>
+                            <p>contato@listai.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Suporte</h4>
+                            <p>Resposta em até 24h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logosbg.png" alt="ListAI Logo" class="logo-icon">
+                    <span>ListAI</span>
+                </div>
+                <p>&copy; 2024 ListAI. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="success-animation">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Inscrição Confirmada!</h3>
+            <p>Você foi adicionado à nossa lista de testadores beta. Em breve enviaremos instruções para download.</p>
+            <button onclick="closeModal()" class="modal-btn">Entendi</button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
